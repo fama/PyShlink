@@ -1,4 +1,4 @@
-# py-link
+# PyShlink
 Python module for API communication with [Shlink](https://shlink.io)
 
 This package is based on the work of David Southgate and his creation, shlink-py, which you can find here: [shlink-py](https://github.com/DavidSouthgate/shlink-py)
