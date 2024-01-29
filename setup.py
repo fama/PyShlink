@@ -6,11 +6,12 @@ LONG_DESCRIPTION = 'This library has been created to facilitate the extraction o
 
 setup(
        
-        name="py-link", 
+        name="PyShlink", 
         version=VERSION,
         author=["Victor Díaz", "Gonzalo Moyano"],
-        author_email=["<>", "<gonzalomhenriquez13@gmail.com>"],
+        author_email=["vmdcortes@gmail.com", "gonzalomhenriquez13@gmail.com"],
         description=DESCRIPTION,
+        url="https://github.com/STIV-Cloud-Gaming-Hosting/PyShlink",
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         install_requires=[
