@@ -7,12 +7,12 @@ from requests import Response, ConnectionError
 class Request:
 
     @staticmethod
-    def get(url: str, api_key: str, path: str, headers: Dict[str, str] = None) -> Dict:
+    def get(url: str, api_key: str, path: str, headers: Dict[str, str] = None, params: Dict[str, str] = None) -> Dict:
         if headers is None:
             headers = {}
         headers["X-Api-Key"] = api_key
         try:
-            response = requests.get(url + path, headers=headers)
+            response = requests.get(url + path, headers=headers, params=params)
         except ConnectionError as e:
             return {
                 "error": "CONNECTION_ERROR",
